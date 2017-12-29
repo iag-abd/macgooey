@@ -1,0 +1,21 @@
+sudo: false
+language: node_js
+node_js:
+  - "node"
+
+cache:
+  directories:
+    - "packages/macgooey/node_modules"
+
+install:
+  - npm install
+
+script:
+  - npm --prefix packages/macgooey run flow-typed install
+  - npm --prefix packages/macgooey run flow
+  - npm --prefix packages/macgooey run lint
+  - npm --prefix packages/macgooey run prettier
+  - npm --prefix packages/macgooey test
+
+after_success:
+  - echo Finished...

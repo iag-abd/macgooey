@@ -1,0 +1,16 @@
+[ignore]
+.storybook
+
+[include]
+./stories
+
+[libs]
+
+[lints]
+
+[options]
+# This is here so that we can get the types from the original source. Users of
+# the library wont need to do this. It's here just for deving in the Storybook.
+module.name_mapper='^@macgyver-team\/\(.*\)$' -> '<PROJECT_ROOT>/packages/\1/src'
+
+[strict]
