@@ -1,12 +1,14 @@
 ![MacGooey Header](https://iag-abd.github.io/macgooey/assets/images/macgooey-header.svg)
 
-MacGyver UI
-===========
+MacGooey
+========
 
-The MacGyver UI is a collection of components can be used to quickly build a
+Home of the MacGooey Mono Repo.
+
+MacGooey is a collection of components that can be used to quickly build a
 consistently themed application using reusable components. By extracting
 components that solve consistent problems across our suite of applications,
-we can prevent doubling up on component use uneccessarily.
+we can prevent doubling up on components.
 
 ### Storybook
 
@@ -21,21 +23,23 @@ use them in your applications.
 ```javascript
 import { Button } from "@macgyver-team/macgooey";
 
-const component = <Button>My Button</Button>
+const MyButton = () => <Button>My Button</Button>
 ```
 
 ### Contributing
 
 1. Start by cloning this repository into a folder on your computer.
-2. In the `packages/macgooey` directory, run `npm run watch` to compile and
+2. Install node modules by running `npm i` at the project root and in the
+directory `packages/macgooey`.
+3. In the `packages/macgooey` directory, run `npm run watch` to compile and
 watch the source files for the UI (Any changes to make to the files under
-`packages/macgooey/src` will now cause the files to be rebuild/recompiled
-automatically)
-3. In the root directory, run `npm run storybook`. This will start the
+`packages/macgooey/src` will now cause the files to be rebuilt/recompiled
+automatically). Hot releading will be reflected in the storybook.
+4. In the root directory, run `npm run storybook`. This will start the
 storybook on port 9002 (by default), which will load any "stories" that are
 configured in the `stories` directory.
-4. Open a web browser to http://localhost:9002.
-5. Change files in the `packages/macgooey/src` directory and see your changes
+5. Open a web browser to http://localhost:9002.
+6. Change files in the `packages/macgooey/src` directory and see your changes
 appear automatically.
 
 ### This project uses
