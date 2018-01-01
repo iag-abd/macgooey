@@ -23,7 +23,7 @@ use them in your applications.
 ```javascript
 import { Button } from "@macgyver-team/macgooey";
 
-const MyButton = () => <Button>My Button</Button>
+const MyButton = () => <Button>My Button</Button>;
 ```
 
 ### Contributing
