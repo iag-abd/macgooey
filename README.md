@@ -3,6 +3,10 @@
 MacGooey
 ========
 
+[![build status](https://img.shields.io/travis/iag-abd/macgooey.svg)](https://travis-ci.org/iag-abd/Pijin)
+[![npm version](https://img.shields.io/npm/v/@macgyver-team/macgooey.svg)](https://www.npmjs.com/package/@macgyver-team/macgooey)
+[![npm download total](https://img.shields.io/npm/dt/macgooey.svg)](https://www.npmjs.com/package/macgooey)
+
 Home of the MacGooey Mono Repo.
 
 MacGooey is a collection of components that can be used to quickly build a
