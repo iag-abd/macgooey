@@ -8,7 +8,7 @@ cache:
     - "packages/macgooey/node_modules"
 
 install:
-  - npm install
+  - npm --prefix packages/macgooey install
 
 script:
   - npm --prefix packages/macgooey run flow-typed install
