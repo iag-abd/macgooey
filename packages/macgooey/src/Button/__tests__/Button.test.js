@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "..";
 import { withBaseTheme } from "../../theme/utils";
+import "jest-styled-components";
 
 import renderer from "react-test-renderer";
 
