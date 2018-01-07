@@ -2,13 +2,13 @@
 
 export { ThemeProvider } from "styled-components";
 
-type ColorPalette = {|
+export type ColorPalette = {|
   primary: string,
   secondary: string,
   tertiary: string
 |};
 
-type ColorShades = {|
+export type ColorShade = {|
   lighterGray: string,
   lightGray: string,
   gray: string,
@@ -29,7 +29,7 @@ export type Styles = {|
   button: ButtonStyles,
   color: ColorPalette,
   colorCompliment: ColorPalette,
-  colorShades: ColorShades,
+  colorShade: ColorShade,
   fontFamilyHeading: string,
   input: InputStyles,
   textColorBody: string
@@ -59,7 +59,7 @@ export const themeBase: Styles = {
     secondary: "#FFF",
     tertiary: "#FFF"
   },
-  colorShades: {
+  colorShade: {
     lighterGray: "#eee",
     lightGray: "#ddd",
     gray: "#aaa",

@@ -15,4 +15,10 @@ storiesOf("InputText", module)
     withInfo(`
     A simple input text field.
     `)(() => <InputText />)
+  )
+  .add(
+    "Placeholder",
+    withInfo(`
+    A text input field with a placeholder.
+    `)(() => <InputText placeholder={knobs.text("Placeholder", "My Placeholder")} />)
   );

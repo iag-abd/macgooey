@@ -9,13 +9,13 @@ exports[`<Button /> it should render 1`] = `
   padding: 12px 14px;
   cursor: pointer;
   outline: none;
+  -webkit-transition: background 150ms;
+  transition: background 150ms;
   background: #eee;
   border-color: #d5d5d5;
   border-style: solid;
   border-width: 0;
   color: #555;
-  -webkit-transition: background 100ms;
-  transition: background 100ms;
 }
 
 .c0:hover {

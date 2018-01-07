@@ -15,7 +15,6 @@ export const StyledButton = styled.button`
   border-style: solid;
   border-width: ${p => p.theme.button.borderWidth};
   color: ${complimentOrShade("darkGray")};
-  transition: background 100ms;
   &:hover {
     background: ${p => darken(0.1, colorOrShade("lighterGray")(p))};
   }
