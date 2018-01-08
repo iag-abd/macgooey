@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import styled from "styled-components";
-import { themeColorShade } from '../theme/colors';
+import { themeColorShade } from "../theme/colors";
 
 type OptionGroupProps = {|
   children: React.Node

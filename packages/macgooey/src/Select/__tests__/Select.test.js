@@ -22,7 +22,12 @@ describe("<Select />", () => {
 
 describe("<Select options />", () => {
   test("it should render the list of options after a click event", () => {
-    const component = shallow(<Select options={[{ text: "foo", value: 1 }, { text: "bar", value: 2 }]} theme={themeBase} />);
+    const component = shallow(
+      <Select
+        options={[{ text: "foo", value: 1 }, { text: "bar", value: 2 }]}
+        theme={themeBase}
+      />
+    );
     component.simulate("click");
 
     expect(component.find("OptionList").length).toEqual(1);
@@ -33,12 +38,20 @@ describe("<Select placeholder />", () => {
   const testOptions = [{ text: "foo", value: 1 }, { text: "bar", value: 2 }];
 
   test("it should display the placeholder when nothing is selected", () => {
-    const component = shallow(<Select options={testOptions} theme={themeBase} />);
-    expect(component.find('span').text()).toBe("Please select");
+    const component = shallow(
+      <Select options={testOptions} theme={themeBase} />
+    );
+    expect(component.find("span").text()).toBe("Please select");
   });
 
   test("it should display the custom placeholder when nothing is selected", () => {
-    const component = shallow(<Select placeholder="Foo Placeholder" options={testOptions} theme={themeBase} />);
-    expect(component.find('span').text()).toBe("Foo Placeholder");
+    const component = shallow(
+      <Select
+        placeholder="Foo Placeholder"
+        options={testOptions}
+        theme={themeBase}
+      />
+    );
+    expect(component.find("span").text()).toBe("Foo Placeholder");
   });
 });

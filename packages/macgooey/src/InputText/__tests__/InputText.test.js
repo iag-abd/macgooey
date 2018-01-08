@@ -19,7 +19,9 @@ describe("<InputText />", () => {
 
 describe("<InputText placeholder />", () => {
   test("it should render", () => {
-    const component = renderer.create(withBaseTheme(<InputText placeholder="foo" />));
+    const component = renderer.create(
+      withBaseTheme(<InputText placeholder="foo" />)
+    );
 
     let tree = component.toJSON();
 

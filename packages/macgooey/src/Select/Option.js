@@ -3,7 +3,11 @@
 import React from "react";
 import styled from "styled-components";
 import { darken } from "polished";
-import { themeColorCompliment, themeColor, themeColorShade } from "../theme/colors";
+import {
+  themeColorCompliment,
+  themeColor,
+  themeColorShade
+} from "../theme/colors";
 import { focusableMixin } from "../mixins";
 
 const OptionDiv = styled.div`
@@ -25,7 +29,7 @@ const OptionDiv = styled.div`
 `;
 
 type Props = {
-  children: string,
+  children: string
 };
 
 const Option = ({ children: text, ...props }: Props) => (

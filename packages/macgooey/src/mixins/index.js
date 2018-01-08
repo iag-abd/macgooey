@@ -8,7 +8,7 @@ export const fontBody = css`
 `;
 
 export const focusableMixin = css`
-  outline-color: ${p => p.theme.color.primary}
+  outline-color: ${p => p.theme.color.primary};
 `;
 
 export const buttonMixin = css`
