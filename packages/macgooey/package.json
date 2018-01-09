@@ -12,12 +12,22 @@
     "prettier": "prettier -l 'src/**/*.js'",
     "prettier:write": "prettier --write 'src/**/*.js'",
     "watch": "rimraf dist && BABEL_ENV=es babel src --watch -d dist/es --ignore __tests__",
-    "test": "jest"
+    "test": "jest",
+    "test:report": "jest && cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
     "testMatch": [
       "**/src/**/__tests__/**/*.test.js"
-    ]
+    ],
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 80,
+        "statements": -10
+      }
+    }
   },
   "author": "MacGyver Team",
   "contributors": [
@@ -35,6 +45,7 @@
     "babel-jest": "^22.0.1",
     "babel-plugin-dev-expression": "^0.2.1",
     "babel-plugin-styled-components": "^1.3.0",
+    "coveralls": "^3.0.0",
     "eslint": "^4.13.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-standard": "^11.0.0-beta.0",
