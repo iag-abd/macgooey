@@ -44,4 +44,5 @@ setOptions({
 storybook.configure(() => {
   require("../stories/Button");
   require("../stories/InputText");
+  require("../stories/Icons");
 }, module);
