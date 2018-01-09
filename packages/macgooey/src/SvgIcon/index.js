@@ -1,11 +1,17 @@
-import React from "react";
+// @flow
+
+import * as React from "react";
 
 const style = {
   width: "24px",
   display: "inline-block"
 };
 
-const SvgIcon = ({ children, ...props }) => (
+type Props = {
+  children: React.Node
+};
+
+const SvgIcon = ({ children, ...props }: Props) => (
   <svg
     style={style}
     focusable="false"
