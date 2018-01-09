@@ -54,3 +54,4 @@ appear automatically.
 - [Jest](https://facebook.github.io/jest/) & [Enzyme](http://airbnb.io/enzyme/) for tests
 - [Rollup](https://rollupjs.org/) for bundling the UI distributable
 - [Storybook JS](https://storybook.js.org/) & [Webpack](https://webpack.js.org/) for running and building the storybook
+- [Feather Icons](https://feathericons.com/)
