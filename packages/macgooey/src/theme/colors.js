@@ -1,7 +1,5 @@
 import * as R from "ramda";
 
-export const colorOr = (defaultColor = "#000") => p =>
-  R.pathOr(defaultColor, ["theme", "color", p.color], p);
 
 export const colorOrShade = (defaultShade = "lightGray") => p =>
   R.pathOr(
