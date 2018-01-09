@@ -1,3 +1,4 @@
 {
-  "presets": ["./tools/babel-preset"]
+  "presets": ["./tools/babel-preset"],
+  "plugins": ["./hacks/arrow-function-coverage-fix.js"]
 }
