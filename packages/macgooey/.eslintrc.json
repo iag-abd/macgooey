@@ -2,7 +2,11 @@
   "extends": [
     "standard",
     "standard-react",
-    "prettier"
+    "prettier",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype"
   ],
   "env": {
     "es6": true,

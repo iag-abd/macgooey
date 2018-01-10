@@ -6,6 +6,8 @@ import * as Icons from "./icons";
 
 export * from "./Button";
 export * from "./InputText";
+export * from "./Select";
+
 export * from "./theme";
 
 // It's unlikely the icons that aren't used will be removed via tree shaking /

@@ -1,4 +1,4 @@
 {
   "presets": ["./tools/babel-preset"],
-  "plugins": ["./hacks/arrow-function-coverage-fix.js"]
+  "plugins": ["@babel/plugin-proposal-class-properties", "./hacks/arrow-function-coverage-fix.js"]
 }
