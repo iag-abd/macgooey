@@ -68,14 +68,19 @@ describe("<Select options />", () => {
     const component = mount(withBaseTheme(<Select options={testOptions} />));
 
     component.simulate("click");
-    component.find("Option").at(0).simulate("mouseup");
+    component
+      .find("Option")
+      .at(0)
+      .simulate("mouseup");
 
     expect(component.find("Option").length).toEqual(0);
     expect(component.find("span").text()).toEqual("foo");
   });
 
   test("it should scroll the element into view when the select is opened with a value set", () => {
-    const component = mount(withBaseTheme(<Select defaultValue={1} options={testOptions} />));
+    const component = mount(
+      withBaseTheme(<Select defaultValue={1} options={testOptions} />)
+    );
 
     // We'll mock this temporarily
     const sivMock = jest.fn();
