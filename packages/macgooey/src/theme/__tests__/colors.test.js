@@ -1,4 +1,9 @@
-import { colorOrShade, complimentOrShade, colorOr, complimentOr } from "../colors";
+import {
+  colorOrShade,
+  complimentOrShade,
+  colorOr,
+  complimentOr
+} from "../colors";
 import { themeBase as theme } from "..";
 
 describe("colorOrShade", () => {

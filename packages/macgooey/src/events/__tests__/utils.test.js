@@ -27,7 +27,9 @@ describe("noImmediatePropagate", () => {
     };
     noImmediatePropagate(mockEvent);
 
-    expect(mockEvent.nativeEvent.stopImmediatePropagation.mock.calls.length).toBe(1);
+    expect(
+      mockEvent.nativeEvent.stopImmediatePropagation.mock.calls.length
+    ).toBe(1);
   });
   test("it should return the event", () => {
     const mockEvent = {
