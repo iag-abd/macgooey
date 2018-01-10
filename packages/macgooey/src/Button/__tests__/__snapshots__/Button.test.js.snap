@@ -29,3 +29,93 @@ exports[`<Button /> it should render 1`] = `
   Test Button
 </button>
 `;
+
+exports[`<Button /> it should render the primary button 1`] = `
+.c0 {
+  border-radius: 3px;
+  border: none;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 0.9em;
+  padding: 12px 14px;
+  cursor: pointer;
+  outline: none;
+  background: #4375E8;
+  border-color: #1b56dd;
+  border-style: solid;
+  border-width: 0;
+  color: #FFF;
+  -webkit-transition: background 100ms;
+  transition: background 100ms;
+}
+
+.c0:hover {
+  background: #1b56dd;
+}
+
+<button
+  className="c0"
+  color="primary"
+>
+  Test Button
+</button>
+`;
+
+exports[`<Button /> it should render the secondary button 1`] = `
+.c0 {
+  border-radius: 3px;
+  border: none;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 0.9em;
+  padding: 12px 14px;
+  cursor: pointer;
+  outline: none;
+  background: #FF4448;
+  border-color: #ff1116;
+  border-style: solid;
+  border-width: 0;
+  color: #FFF;
+  -webkit-transition: background 100ms;
+  transition: background 100ms;
+}
+
+.c0:hover {
+  background: #ff1116;
+}
+
+<button
+  className="c0"
+  color="secondary"
+>
+  Test Button
+</button>
+`;
+
+exports[`<Button /> it should render the tertiary button 1`] = `
+.c0 {
+  border-radius: 3px;
+  border: none;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 0.9em;
+  padding: 12px 14px;
+  cursor: pointer;
+  outline: none;
+  background: #E8B221;
+  border-color: #c29314;
+  border-style: solid;
+  border-width: 0;
+  color: #FFF;
+  -webkit-transition: background 100ms;
+  transition: background 100ms;
+}
+
+.c0:hover {
+  background: #c29314;
+}
+
+<button
+  className="c0"
+  color="tertiary"
+>
+  Test Button
+</button>
+`;
