@@ -7,7 +7,6 @@ import { withInfo } from "@storybook/addon-info";
 import * as knobs from "@storybook/addon-knobs";
 
 import { Icons } from "@macgyver-team/macgooey";
-import { __ } from "../packages/macgooey/node_modules/ramda";
 
 const iconHolderStyle = {
   padding: "40px",
