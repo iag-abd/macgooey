@@ -6,7 +6,7 @@ MacGooey
 [![build status](https://img.shields.io/travis/iag-abd/macgooey.svg)](https://travis-ci.org/iag-abd/macgooey)
 [![npm version](https://img.shields.io/npm/v/@macgyver-team/macgooey.svg)](https://www.npmjs.com/package/@macgyver-team/macgooey)
 [![npm download total](https://img.shields.io/npm/dt/macgooey.svg)](https://www.npmjs.com/package/macgooey)
-[![coverage status](https://coveralls.io/repos/github/iag-abd/macgooey/badge.svg?branch=master)](https://coveralls.io/github/iag-abd/macgooey?branch=master)
+[![coverage status](https://coveralls.io/repos/github/iag-abd/macgooey/badge.svg?branch=master&service=github)](https://coveralls.io/github/iag-abd/macgooey?branch=master)
 
 Home of the MacGooey Mono Repo.
 
