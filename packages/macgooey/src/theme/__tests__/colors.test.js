@@ -29,3 +29,15 @@ describe("complimentOr", () => {
     expect(complimentOr("#eee")({ color: "primary", theme })).toBe("#FFF");
   });
 });
+
+describe("colorOr", () => {
+  test("it should return the primary theme color defined in props", () => {
+    expect(colorOr("#eee")({ color: "primary", theme })).toBe("#4375E8");
+  });
+});
+
+describe("complimentOr", () => {
+  test("it should return the primary theme color compliment defined in props", () => {
+    expect(complimentOr("#eee")({ color: "primary", theme })).toBe("#FFF");
+  });
+});
