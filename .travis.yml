@@ -15,7 +15,7 @@ script:
   - npm --prefix packages/macgooey run flow
   - npm --prefix packages/macgooey run lint
   - npm --prefix packages/macgooey run prettier
-  - npm --prefix packages/macgooey test:report
+  - npm --prefix packages/macgooey run test:report
 
 after_success:
   - echo Finished...
