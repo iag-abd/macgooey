@@ -15,7 +15,8 @@ script:
   - npm --prefix packages/macgooey run flow
   - npm --prefix packages/macgooey run lint
   - npm --prefix packages/macgooey run prettier
-  - npm --prefix packages/macgooey test
+  - npm --prefix packages/macgooey run test
+  - cat ./packages/macgooey/coverage/lcov.info | npm --prefix packages/macgooey run report
 
 after_success:
   - echo Finished...

@@ -45,4 +45,5 @@ storybook.configure(() => {
   require("../stories/Button");
   require("../stories/InputText");
   require("../stories/Select");
+  require("../stories/Icons");
 }, module);
