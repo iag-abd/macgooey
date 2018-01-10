@@ -2,29 +2,25 @@
 
 import React from "react";
 import { InputText } from "..";
-import { withBaseTheme } from "../../theme/utils";
+import { themeBase as theme } from "../../theme";
 import "jest-styled-components";
 
 import renderer from "react-test-renderer";
 
 describe("<InputText />", () => {
   test("it should render", () => {
-    const component = renderer.create(withBaseTheme(<InputText />));
+    const component = renderer.create(<InputText theme={theme} />);
 
-    let tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
 
 describe("<InputText placeholder />", () => {
   test("it should render", () => {
     const component = renderer.create(
-      withBaseTheme(<InputText placeholder="foo" />)
+      <InputText placeholder="foo" theme={theme} />
     );
 
-    let tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

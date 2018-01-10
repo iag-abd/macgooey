@@ -39,13 +39,13 @@ exports[`<Button /> it should render the primary button 1`] = `
   padding: 12px 14px;
   cursor: pointer;
   outline: none;
+  -webkit-transition: background 150ms;
+  transition: background 150ms;
   background: #4375E8;
   border-color: #1b56dd;
   border-style: solid;
   border-width: 0;
   color: #FFF;
-  -webkit-transition: background 100ms;
-  transition: background 100ms;
 }
 
 .c0:hover {
@@ -69,13 +69,13 @@ exports[`<Button /> it should render the secondary button 1`] = `
   padding: 12px 14px;
   cursor: pointer;
   outline: none;
+  -webkit-transition: background 150ms;
+  transition: background 150ms;
   background: #FF4448;
   border-color: #ff1116;
   border-style: solid;
   border-width: 0;
   color: #FFF;
-  -webkit-transition: background 100ms;
-  transition: background 100ms;
 }
 
 .c0:hover {
@@ -99,13 +99,13 @@ exports[`<Button /> it should render the tertiary button 1`] = `
   padding: 12px 14px;
   cursor: pointer;
   outline: none;
+  -webkit-transition: background 150ms;
+  transition: background 150ms;
   background: #E8B221;
   border-color: #c29314;
   border-style: solid;
   border-width: 0;
   color: #FFF;
-  -webkit-transition: background 100ms;
-  transition: background 100ms;
 }
 
 .c0:hover {

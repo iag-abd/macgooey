@@ -1,14 +1,26 @@
-import { colorOrShade, complimentOrShade } from "../colors";
-import { themeBase } from "..";
+import { colorOrShade, complimentOrShade, colorOr, complimentOr } from "../colors";
+import { themeBase as theme } from "..";
 
 describe("colorOrShade", () => {
   test("it should return the default shade of the theme", () => {
-    expect(colorOrShade()({ theme: themeBase })).toBe("#ddd");
+    expect(colorOrShade()({ theme })).toBe("#ddd");
   });
 });
 
 describe("complimentOrShade", () => {
   test("it should return the default shade of the theme", () => {
-    expect(complimentOrShade()({ theme: themeBase })).toBe("#ddd");
+    expect(complimentOrShade()({ theme })).toBe("#ddd");
+  });
+});
+
+describe("colorOr", () => {
+  test("it should return the primary theme color defined in props", () => {
+    expect(colorOr("#eee")({ color: "primary", theme })).toBe("#4375E8");
+  });
+});
+
+describe("complimentOr", () => {
+  test("it should return the primary theme color compliment defined in props", () => {
+    expect(complimentOr("#eee")({ color: "primary", theme })).toBe("#FFF");
   });
 });

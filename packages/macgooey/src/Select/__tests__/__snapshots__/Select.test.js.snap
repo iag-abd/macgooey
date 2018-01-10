@@ -41,3 +41,87 @@ exports[`<Select /> it should render 1`] = `
   </span>
 </div>
 `;
+
+exports[`<Select placeholder /> it should display the custom placeholder when nothing is selected 1`] = `
+.c0 {
+  padding: 10px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1em;
+  border-width: 1px;
+  border-color: #ddd;
+  border-style: solid;
+  outline: none;
+  width: 100%;
+  -webkit-transition: border-color 150ms;
+  transition: border-color 150ms;
+  background: #eee;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:focus {
+  border-color: #4375E8;
+}
+
+.c0[data-selected="false"] {
+  color: #aaa;
+}
+
+<div
+  className="c0"
+  data-selected={false}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  tabIndex={0}
+>
+  <span>
+    Foo Placeholder
+  </span>
+</div>
+`;
+
+exports[`<Select placeholder /> it should display the default placeholder when nothing is selected 1`] = `
+.c0 {
+  padding: 10px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1em;
+  border-width: 1px;
+  border-color: #ddd;
+  border-style: solid;
+  outline: none;
+  width: 100%;
+  -webkit-transition: border-color 150ms;
+  transition: border-color 150ms;
+  background: #eee;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0:focus {
+  border-color: #4375E8;
+}
+
+.c0[data-selected="false"] {
+  color: #aaa;
+}
+
+<div
+  className="c0"
+  data-selected={false}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  tabIndex={0}
+>
+  <span>
+    Please select
+  </span>
+</div>
+`;
