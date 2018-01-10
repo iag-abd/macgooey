@@ -28,7 +28,8 @@ type State = {|
 type Props = {|
   options: SelectOption[],
   placeholder?: string,
-  theme?: Styles
+  theme?: Styles,
+  defaultValue?: mixed
 |};
 
 const getDisplayText = (options: SelectOption[], index: number, defaultText) =>
@@ -36,6 +37,9 @@ const getDisplayText = (options: SelectOption[], index: number, defaultText) =>
 
 const getValue = (options: SelectOption[], index: number) =>
   options[index] ? options[index].text : undefined;
+
+const getIndexByValue = (options: SelectOption[], value) =>
+  options.findIndex(x => x.value === value);
 
 const WrapperDiv = styled.div`
   ${inputFieldMixin};
@@ -60,6 +64,16 @@ export class Select extends React.Component<Props, State> {
   componentDidMount() {
     // Close the Select Input when mouse is down outside the component
     window.addEventListener("mousedown", this.closeSelect);
+
+    if (this.props.defaultValue) {
+      this.setState({
+        selectedIndex: getIndexByValue(
+          this.props.options,
+          this.props.defaultValue
+        ),
+        value: this.props.defaultValue
+      });
+    }
   }
 
   componentWillUnmount() {

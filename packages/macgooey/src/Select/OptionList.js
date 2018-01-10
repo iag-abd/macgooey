@@ -30,6 +30,7 @@ export const OptionList = ({
       <Option
         key={opt.value}
         data-selected={index === selected}
+        data-focused={index === focused}
         innerRef={element => {
           if (element !== null) {
             if (index === focused) {
