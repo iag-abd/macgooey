@@ -1,3 +1,5 @@
+// @flow
+
 import {
   colorOrShade,
   complimentOrShade,
@@ -8,13 +10,13 @@ import { themeBase as theme } from "..";
 
 describe("colorOrShade", () => {
   test("it should return the default shade of the theme", () => {
-    expect(colorOrShade()({ theme })).toBe("#ddd");
+    expect(colorOrShade()({ color: "foo", theme })).toBe("#ddd");
   });
 });
 
 describe("complimentOrShade", () => {
   test("it should return the default shade of the theme", () => {
-    expect(complimentOrShade()({ theme })).toBe("#ddd");
+    expect(complimentOrShade()({ color: "foo", theme })).toBe("#ddd");
   });
 });
 
