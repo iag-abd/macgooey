@@ -16,9 +16,9 @@ export const themeColor = (color: $Keys<ColorPalette> = "primary") => ({
   theme
 }: ThemeUtil) => theme.color[color];
 
-export const themeColorCompliment = (
-  compliment: $Keys<ColorPalette> = "primary"
-) => ({ theme }: ThemeUtil) => theme.colorCompliment[compliment];
+export const themeColorComplement = (
+  complement: $Keys<ColorPalette> = "primary"
+) => ({ theme }: ThemeUtil) => theme.colorComplement[complement];
 
 export const themeColorShade = (shade: $Keys<ColorShade> = "gray") => ({
   theme
@@ -30,18 +30,18 @@ export const colorOr = (defaultColor: string = "#000") => ({
   theme
 }: ColorUtil) => theme.color[color] || defaultColor;
 
-export const complimentOr = (defaultColor: string = "#fff") => ({
+export const complementOr = (defaultColor: string = "#fff") => ({
   color,
   theme
-}: ColorUtil) => theme.colorCompliment[color] || defaultColor;
+}: ColorUtil) => theme.colorComplement[color] || defaultColor;
 
 export const colorOrShade = (shade: $Keys<ColorShade> = "lightGray") => ({
   color,
   theme
 }: ColorUtil) => theme.color[color] || themeColorShade(shade)({ theme });
 
-export const complimentOrShade = (shade: $Keys<ColorShade> = "lightGray") => ({
+export const complementOrShade = (shade: $Keys<ColorShade> = "lightGray") => ({
   color,
   theme
 }: ColorUtil) =>
-  theme.colorCompliment[color] || themeColorShade(shade)({ theme });
+  theme.colorComplement[color] || themeColorShade(shade)({ theme });

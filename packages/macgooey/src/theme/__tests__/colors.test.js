@@ -2,9 +2,9 @@
 
 import {
   colorOrShade,
-  complimentOrShade,
+  complementOrShade,
   colorOr,
-  complimentOr
+  complementOr
 } from "../colors";
 import { themeBase as theme } from "..";
 
@@ -14,9 +14,9 @@ describe("colorOrShade", () => {
   });
 });
 
-describe("complimentOrShade", () => {
+describe("complementOrShade", () => {
   test("it should return the default shade of the theme", () => {
-    expect(complimentOrShade()({ color: "foo", theme })).toBe("#ddd");
+    expect(complementOrShade()({ color: "foo", theme })).toBe("#ddd");
   });
 });
 
@@ -26,8 +26,8 @@ describe("colorOr", () => {
   });
 });
 
-describe("complimentOr", () => {
-  test("it should return the primary theme color compliment defined in props", () => {
-    expect(complimentOr("#eee")({ color: "primary", theme })).toBe("#FFF");
+describe("complementOr", () => {
+  test("it should return the primary theme color complement defined in props", () => {
+    expect(complementOr("#eee")({ color: "primary", theme })).toBe("#FFF");
   });
 });

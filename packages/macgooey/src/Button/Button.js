@@ -6,7 +6,7 @@ import { buttonMixin } from "../mixins";
 import { darken } from "polished";
 
 import { type Styles } from "../theme";
-import { colorOrShade, complimentOrShade } from "../theme/colors";
+import { colorOrShade, complementOrShade } from "../theme/colors";
 
 export const StyledButton = styled.button`
   ${buttonMixin};
@@ -14,7 +14,7 @@ export const StyledButton = styled.button`
   border-color: ${p => darken(0.1, colorOrShade("lighterGray")(p))};
   border-style: solid;
   border-width: ${p => p.theme.button.borderWidth};
-  color: ${complimentOrShade("darkGray")};
+  color: ${complementOrShade("darkGray")};
   &:hover {
     background: ${p => darken(0.1, colorOrShade("lighterGray")(p))};
   }

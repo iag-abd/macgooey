@@ -28,7 +28,7 @@ type InputStyles = ElementStyles;
 export type Styles = {|
   button: ButtonStyles,
   color: ColorPalette,
-  colorCompliment: ColorPalette,
+  colorComplement: ColorPalette,
   colorShade: ColorShade,
   fontFamilyHeading: string,
   input: InputStyles,
@@ -54,7 +54,7 @@ export const themeBase: Styles = {
     secondary: "#FF4448",
     tertiary: "#E8B221"
   },
-  colorCompliment: {
+  colorComplement: {
     primary: "#FFF",
     secondary: "#FFF",
     tertiary: "#FFF"
@@ -85,7 +85,7 @@ export const themeAerith = {
     secondary: "#6D6E71",
     tertiary: "#007BAD"
   },
-  colorCompliment: {
+  colorComplement: {
     default: "#333",
     primary: "#FFF",
     secondary: "#FFF",
@@ -110,7 +110,7 @@ export const themeSephiroth = {
     secondary: "#01B5CC",
     tertiary: "#1E2741"
   },
-  colorCompliment: {
+  colorComplement: {
     default: "#602F89",
     primary: "#FFF",
     secondary: "#FFF",

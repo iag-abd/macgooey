@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { darken } from "polished";
 import {
-  themeColorCompliment,
+  themeColorComplement,
   themeColor,
   themeColorShade
 } from "../theme/colors";
@@ -24,7 +24,7 @@ const OptionDiv = styled.div`
   }
   &[data-selected="true"] {
     background: ${themeColor("primary")};
-    color: ${themeColorCompliment("primary")};
+    color: ${themeColorComplement("primary")};
   }
 `;
 
