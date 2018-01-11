@@ -26,16 +26,33 @@ const titleStyle = {
 
 storiesOf("Icons", module)
   .addDecorator(knobs.withKnobs)
-  .add("Feather Icons", () => (
-    <div>
-      {Object.keys(Icons).map(k => {
-        const Icon = Icons[k];
-        return (
-          <div style={iconHolderStyle}>
-            <Icon key={k} />
-            <span style={titleStyle}>{k}</span>
-          </div>
-        );
-      })}
-    </div>
-  ));
+  .add(
+    "Feather Icons",
+    withInfo({
+      source: false,
+      inline: false,
+      text: `
+      Svg icons are available by importing the Icon component. They will
+      eventually be moved into their own package, but for the time being are
+      available here.
+
+      ~~~js
+      import { Icon } from "@macgyver-team/macgooey";
+
+      <Icon.AlertCircle />
+      ~~~
+      `
+    })(() => (
+      <div>
+        {Object.keys(Icons).map(k => {
+          const Icon = Icons[k];
+          return (
+            <div style={iconHolderStyle}>
+              <Icon key={k} />
+              <span style={titleStyle}>{k}</span>
+            </div>
+          );
+        })}
+      </div>
+    ))
+  );
