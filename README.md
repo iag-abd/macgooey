@@ -17,7 +17,7 @@ we can prevent doubling up on components.
 
 ### Storybook
 
-Coming soon...
+Coming soon to a repo near you!!!
 
 
 ### Usage
