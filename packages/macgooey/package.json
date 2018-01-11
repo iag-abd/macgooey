@@ -11,7 +11,7 @@
     "lint": "eslint src/**/*.js",
     "prettier": "prettier -l 'src/**/*.js'",
     "prettier:write": "prettier --write 'src/**/*.js'",
-    "watch": "rimraf dist && BABEL_ENV=es babel src --watch -d dist/es --ignore __tests__",
+    "watch": "rimraf dist && BABEL_ENV=es babel src --watch -d dist/es --ignore **/__tests__",
     "test": "jest",
     "test:watch": "jest --watch",
     "report": "coveralls"

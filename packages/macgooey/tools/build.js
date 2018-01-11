@@ -34,13 +34,13 @@ copyFile(
 );
 
 console.log("Building CommonJS modules ...");
-exec(`babel src -d ${DIST_DIR}/lib --ignore __tests__`, {
+exec(`babel src -d ${DIST_DIR}/lib --ignore **/__tests__`, {
   BABEL_ENV: "cjs",
   NODE_ENV: "production"
 });
 
 console.log("\nBuilding ES modules ...");
-exec(`babel src -d ${DIST_DIR}/es --ignore __tests__`, {
+exec(`babel src -d ${DIST_DIR}/es --ignore **/__tests__`, {
   BABEL_ENV: "es",
   NODE_ENV: "production"
 });
