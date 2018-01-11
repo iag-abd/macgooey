@@ -9,7 +9,7 @@ const config = {
   output: {
     sourcemap: process.env.NODE_ENV !== "production" ? "inline" : false
   },
-  name: "MacUI",
+  name: "MacGooey",
   globals: {
     react: "React"
   },
