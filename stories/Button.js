@@ -42,4 +42,27 @@ storiesOf("Button", module)
           ))}
       </ButtonGroup>
     ))
+  )
+
+  .add(
+    "Colors",
+    withInfo(`
+    There are currently 4 colors of button available with each theme.
+    Primary, Secondary, Tertiary, and a default button.
+    `)(() => (
+      <ButtonGroup>
+        <Button onClick={action("clicked")}>
+          Default
+        </Button>
+        <Button color="primary" onClick={action("clicked")}>
+          Primary
+        </Button>
+        <Button color="secondary" onClick={action("clicked")}>
+          Secondary
+        </Button>
+        <Button color="tertiary" onClick={action("clicked")}>
+          Tertiary
+        </Button>
+      </ButtonGroup>
+    ))
   );
