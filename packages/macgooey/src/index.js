@@ -7,6 +7,7 @@ import * as Icons from "./icons";
 export * from "./Button";
 export * from "./InputText";
 export * from "./Select";
+export * from "./Toggle";
 
 export * from "./theme";
 
