@@ -39,7 +39,7 @@ directory `packages/macgooey`.
 3. In the `packages/macgooey` directory, run `npm run watch` to compile and
 watch the source files for the UI (Any changes to make to the files under
 `packages/macgooey/src` will now cause the files to be rebuilt/recompiled
-automatically). Hot releading will be reflected in the storybook.
+automatically). Hot reloading will be reflected in the storybook.
 4. In the root directory, run `npm run storybook`. This will start the
 storybook on port 9002 (by default), which will load any "stories" that are
 configured in the `stories` directory.
