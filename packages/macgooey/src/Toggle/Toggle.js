@@ -19,7 +19,7 @@ export const StyledInput = styled.input`
 `;
 
 export type Props = {
-  children: string,
+  children?: string,
   color?: string,
   theme?: Styles
 };
