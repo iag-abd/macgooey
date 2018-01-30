@@ -1,7 +1,8 @@
 {
   "name": "@macgyver-team/macgooey",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "The MacGyver UI Library Project",
+  "licence": "Apache License 2.0",
   "module": "./es/index.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -17,6 +18,9 @@
     "test:watch": "jest --watch",
     "report": "coveralls",
     "prepublishOnly": "npm run -s build"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "lib",
