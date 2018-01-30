@@ -1,11 +1,10 @@
-"use strict"; 
+"use strict";
 
 const fs = require("fs");
 const path = require("path");
 const execSync = require("child_process").execSync;
 const prettyBytes = require("pretty-bytes");
 const gzipSize = require("gzip-size");
-const mkdirp = require("mkdirp");
 
 const exec = (command, extraEnv) =>
   execSync(
@@ -16,22 +15,7 @@ const exec = (command, extraEnv) =>
     }
   );
 
-const copyFile = (file, path) =>
-  fs.createReadStream(file).pipe(fs.createWriteStream(path));
-
-const DIST_DIR = path.resolve(__dirname, "..", "dist");
-
-mkdirp.sync(DIST_DIR);
-
-copyFile(
-  path.resolve(__dirname, "..", "package.json"),
-  path.resolve(DIST_DIR, "package.json")
-);
-
-copyFile(
-  path.resolve(__dirname, "..", "package-lock.json"),
-  path.resolve(DIST_DIR, "package-lock.json")
-);
+const DIST_DIR = path.resolve(__dirname, "..");
 
 console.log("Building CommonJS modules ...");
 exec(`babel src -d ${DIST_DIR}/lib --ignore **/__tests__`, {
