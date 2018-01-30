@@ -5,17 +5,24 @@
   "module": "./es/index.js",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "rimraf dist && node tools/build",
+    "build": "npm run -s clean && node tools/build",
+    "clean": "rimraf dist lib es",
     "flow": "flow",
     "flow-typed": "flow-typed",
     "lint": "eslint src/**/*.js",
     "prettier": "prettier -l 'src/**/*.js'",
     "prettier:write": "prettier --write 'src/**/*.js'",
-    "watch": "rimraf dist && cross-env BABEL_ENV=es babel src --watch -d dist/es --ignore **/__tests__",
+    "watch": "npm run -s clean && cross-env BABEL_ENV=es babel src --watch -d es --ignore **/__tests__",
     "test": "jest",
     "test:watch": "jest --watch",
-    "report": "coveralls"
+    "report": "coveralls",
+    "prepublishOnly": "npm run -s build"
   },
+  "files": [
+    "lib",
+    "dist",
+    "es"
+  ],
   "jest": {
     "setupFiles": [
       "./test/bootstrap.js"
@@ -68,7 +75,6 @@
     "gzip-size": "^4.1.0",
     "jest": "^22.0.1",
     "jest-styled-components": "^4.9.0",
-    "mkdirp": "^0.5.1",
     "prettier": "^1.9.2",
     "pretty-bytes": "^4.0.2",
     "react": "^16.2.0",
