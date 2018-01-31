@@ -6,6 +6,7 @@ node_js:
 cache:
   directories:
     - "packages/macgooey/node_modules"
+    - "packages/macgooey-icons/node_modules"
 
 install:
   - npm install

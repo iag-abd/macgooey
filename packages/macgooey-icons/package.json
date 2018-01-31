@@ -12,9 +12,6 @@
     "prepublishOnly": "npm run -s build",
     "prettier": "prettier -l 'src/**/*.js'",
     "prettier:write": "prettier --write 'src/**/*.js'",
-    "report": "cat ./coverage/lcov.info | coveralls",
-    "test": "jest",
-    "test:watch": "jest --watch",
     "watch": "npm run -s clean && cross-env BABEL_ENV=es babel src --watch -d es --ignore **/__tests__"
   },
   "publishConfig": {
