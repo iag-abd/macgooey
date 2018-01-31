@@ -11,13 +11,13 @@
     "flow": "flow",
     "flow-typed": "flow-typed",
     "lint": "eslint src/**/*.js",
+    "prepublishOnly": "npm run -s build",
     "prettier": "prettier -l 'src/**/*.js'",
     "prettier:write": "prettier --write 'src/**/*.js'",
-    "watch": "npm run -s clean && cross-env BABEL_ENV=es babel src --watch -d es --ignore **/__tests__",
+    "report": "cat ./coverage/lcov.info | coveralls",
     "test": "jest",
     "test:watch": "jest --watch",
-    "report": "coveralls",
-    "prepublishOnly": "npm run -s build"
+    "watch": "npm run -s clean && cross-env BABEL_ENV=es babel src --watch -d es --ignore **/__tests__"
   },
   "publishConfig": {
     "access": "public"
