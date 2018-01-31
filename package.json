@@ -2,7 +2,7 @@
   "name": "macgyver-ui-packages",
   "private": true,
   "scripts": {
-    "boostrap": "lerna bootstrap --hoist && lerna run --parallel flow-typed -- install && lerna run --parallel build",
+    "bootstrap": "lerna bootstrap --hoist && lerna run --parallel flow-typed -- install && lerna run --parallel build",
     "clean": "lerna clean && lerna run --parallel clean -- -s",
     "flow": "lerna run flow -- -s",
     "lint": "lerna run lint -- -s",
