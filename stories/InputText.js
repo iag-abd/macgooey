@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
 import { withInfo } from "@storybook/addon-info";
 import * as knobs from "@storybook/addon-knobs";
 
@@ -20,5 +19,7 @@ storiesOf("InputText", module)
     "Placeholder",
     withInfo(`
     A text input field with a placeholder.
-    `)(() => <InputText placeholder={knobs.text("Placeholder", "My Placeholder")} />)
+    `)(() => (
+      <InputText placeholder={knobs.text("Placeholder", "My Placeholder")} />
+    ))
   );

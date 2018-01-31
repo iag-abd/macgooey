@@ -4,8 +4,9 @@
   "scripts": {
     "storybook": "start-storybook -p 9002 -c .storybook",
     "flow": "flow",
-    "boostrap": "lerna bootstrap --hoist && lerna run flow-typed -- install",
-    "clean": "lerna clean && lerna run clean -- -s"
+    "boostrap": "lerna bootstrap --hoist && lerna run --parallel flow-typed -- install && lerna run --parallel build",
+    "clean": "lerna clean && lerna run --parallel clean -- -s",
+    "test": "lerna run --parallel test -- -s"
   },
   "dependencies": {
     "@storybook/addon-info": "^3.2.18",

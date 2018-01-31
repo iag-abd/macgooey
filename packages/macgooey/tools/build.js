@@ -8,7 +8,7 @@ const gzipSize = require("gzip-size");
 
 const exec = (command, extraEnv) =>
   execSync(
-    path.resolve(__dirname, "..", "node_modules", ".bin") + `/${command}`,
+    path.resolve(__dirname, "..", "node_modules", ".bin", command),
     {
       stdio: "inherit",
       env: Object.assign({}, process.env, extraEnv)
