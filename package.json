@@ -9,7 +9,8 @@
     "prettier": "lerna run prettier -- -s",
     "storybook": "start-storybook -p 9002 -c .storybook",
     "test": "lerna run test -- -s",
-    "report": "lerna run report -- -s"
+    "report": "lerna run report -- -s",
+    "watch": "lerna run --parallel watch"
   },
   "dependencies": {
     "@storybook/addon-info": "^3.2.18",
