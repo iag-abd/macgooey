@@ -12,7 +12,7 @@
     "prepublishOnly": "npm run -s build",
     "prettier": "prettier -l 'src/**/*.js'",
     "prettier:write": "prettier --write 'src/**/*.js'",
-    "watch": "npm run -s clean && cross-env BABEL_ENV=es babel src --watch -d es --ignore **/__tests__"
+    "watch": "npm run -s clean && node tools/generate-icons && cross-env BABEL_ENV=es babel src --watch -d es --ignore **/__tests__"
   },
   "publishConfig": {
     "access": "public"
