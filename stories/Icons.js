@@ -2,11 +2,10 @@
 
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
 import { withInfo } from "@storybook/addon-info";
 import * as knobs from "@storybook/addon-knobs";
 
-import { Icons } from "@macgyver-team/macgooey";
+import * as Icons from "@macgyver-team/macgooey-icons";
 
 const iconHolderStyle = {
   padding: "40px",
@@ -37,9 +36,9 @@ storiesOf("Icons", module)
       available here.
 
       ~~~js
-      import { Icon } from "@macgyver-team/macgooey";
+      import { AlertCircle } from "@macgyver-team/macgooey-icons";
 
-      <Icon.AlertCircle />
+      <AlertCircle />
       ~~~
       `
     })(() => (

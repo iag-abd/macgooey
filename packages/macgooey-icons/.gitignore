@@ -1,0 +1,5 @@
+coverage
+dist
+es
+lib
+src/*.js

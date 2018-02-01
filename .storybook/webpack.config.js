@@ -22,7 +22,6 @@ module.exports = (baseConfig, env) => {
     config.resolve.alias[`@macgyver-team/${package}`] = path.resolve(
       packagesDir,
       package,
-      "dist",
       "es"
     );
   }

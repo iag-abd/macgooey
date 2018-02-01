@@ -6,17 +6,18 @@ node_js:
 cache:
   directories:
     - "packages/macgooey/node_modules"
+    - "packages/macgooey-icons/node_modules"
 
 install:
-  - npm --prefix packages/macgooey install
+  - npm install
+  - npm run bootstrap
 
 script:
-  - npm --prefix packages/macgooey run flow-typed install
-  - npm --prefix packages/macgooey run flow
-  - npm --prefix packages/macgooey run lint
-  - npm --prefix packages/macgooey run prettier
-  - npm --prefix packages/macgooey run test
-  - cat ./packages/macgooey/coverage/lcov.info | npm --prefix packages/macgooey run report
+  - npm run flow
+  - npm run lint
+  - npm run prettier
+  - npm run test
+  - npm run report
 
 after_success:
   - echo Finished...

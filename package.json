@@ -2,8 +2,14 @@
   "name": "macgyver-ui-packages",
   "private": true,
   "scripts": {
+    "bootstrap": "lerna bootstrap && lerna run --parallel flow-typed -- install",
+    "clean": "lerna clean && lerna run --parallel clean -- -s",
+    "flow": "lerna run flow -- -s",
+    "lint": "lerna run lint -- -s",
+    "prettier": "lerna run prettier -- -s",
     "storybook": "start-storybook -p 9002 -c .storybook",
-    "flow": "flow"
+    "test": "lerna run test -- -s",
+    "report": "lerna run report -- -s"
   },
   "dependencies": {
     "@storybook/addon-info": "^3.2.18",
@@ -16,6 +22,7 @@
   },
   "devDependencies": {
     "babel-preset-flow": "^6.23.0",
-    "flow-bin": "^0.61.0"
+    "flow-bin": "^0.61.0",
+    "lerna": "^2.8.0"
   }
 }
